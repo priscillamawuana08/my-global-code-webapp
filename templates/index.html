@@ -3,31 +3,21 @@
    <title>i can make it</title>
    <link rel="stylesheet"href={{url_for('static',filename='style.css')}}>
   </head>
-  <section>
-   <form class ="style-form">
-     <form sytle="background-color:yellow">
-  <div>
-  <img src="{{url_for('static',filename='images/flower.jpg') }} "alt=" "style="width:200px;height:200px;border-radius:150px;">
-  </div>
-     <div>
-     <div>
-       <h3>
-       <b> 
-        LOGIN 
-       </b>
-       </h3>
-     </div>
-  <div>
-      <input type="text"placeholder="username">
-   </div>
-   <div>
-       <input type="password"placeholder="password">
-  </div>
-  <div>
-  <button type ="submit">send</button>
-  </div>
-  </form>
-</form>
-</section>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="{{url_for('static',filename='images/flower.jpg') }} "alt=" "style="width:100px;height:100px;border-radius:150px;">
+       </div>   
+        <h3><b> LOGIN PAGE</b></h3>
+        <div>
+          <input type="text"placeholder="username"matInput><br><br>
+        </div>
+        <div>
+          <input type="password"placeholder="password"matInput><br><br>
+        </div>
+        <div>
+         <a href="home"><input type="submit" value="submit" name="submit"></a>
+    </div>
+  </body>
 </html>
 
